@@ -65,10 +65,12 @@ a.no-underline:hover {
 }
   
 .fade-out-text{
-  animation: fadeOut 3s;
+  animation: fadeOut 2s; 
+  color:black
 }
+
 @keyframes fadeOut {
-  0% { opacity: 1; }
+  0% { opacity: 1; color:aliceblue;}
   100% { opacity: 0; }
 }
 
@@ -81,7 +83,7 @@ a.no-underline:hover {
 }
 
 #ui{
-  background-image: url('phone.jpg'); 
+  background-image: url('phone.jpg')!important; 
   background-repeat: no-repeat; 
   background-size: cover; 
   background-attachment: fixed;
