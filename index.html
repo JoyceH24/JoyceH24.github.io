@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="css" rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --> 
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-night w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="pad-left w3-bar-item w3-button">HOME</a>
+   <!--  <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SCHEDULE </a> --> 
+   <a href="proj.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> TABLE OF CONTENTS</a> 
+   <a href="p1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Faceless </a> 
+   <a href="p2.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> U + I</a> 
+   <a href="p3.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> I dare not look </a> 
+   <a href="p4.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Prison </a> 
+    <button id="mode" class="w3-bar-item w3-button w3-hide-small" onclick="darkMode()">NIGHT MODE</button>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-night w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+  <!--  <a href="schedule.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SCHEDULE</a>-->
+    <a href="proj.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TABLE OF CONTENTS</a>
+    <button id="mode" class="w3-bar-item w3-button w3-hide-small" onclick="darkMode()">NIGHT MODE</button>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle space">
+    <span id="title" class="move-left big center w3-center w3-padding-large w3-night w3-wide w3-animate-opacity"> <span class="w3-hide-mmedium w3-hide-small">Digital </span>  Writing <span class="w3-hide-medium w3-hide-mmedium w3-hide-small">Collection</span> </span>
+    <br>
+    <!--style="border-style: solid; border-color:#FF10F0; 
+    border-width:3px; font-family:Cursive, Apple Chancery"-->
+    <!--<span id="symbol" class="move-right wingding center w3-center w3-padding-large w3-night w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-mmedium w3-hide-small">Digital </span>Human<span class="w3-hide-medium w3-hide-mmedium w3-hide-small"> ities</span> </span>
+    --></div>
+    <div>
+      <picture>
+        <center><img class="autosize" src="cyber2.jpg"></center> 
+    </picture> 
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+  <div style="border-style: inset; border-color:aqua; margin:30px 50px 60px 50px; padding-bottom:20px; padding-top:10px">
+  <!--  <h2 class="animate2 w3-center"><b> Digital Writing Collection ^_^</b></h2>-->
+  <h3 id="neon" class="w3-center"><em>Lights & Nights</em></h3>
+  <p id="neon1" class="w3-center">Lights & Nights is a digital writing collection focusing on the intersections between the humanities and technology. Enjoy your read!</p>
+  </div>
+
+  <div>
+    <table class="aqua">
+    <tr>
+        <td colspan="3"> 
+            <picture>
+                <source media="(min-width: 650px)" srcset="cyber3.jpg"> 
+                <img class="autosize" src="cyber3.jpg"> 
+            </picture> 
+        </td>
+        <td colspan="1" class="pad-left">
+          <h4>Table of Contents</h4>
+          <ol id="a">
+            <li><a href="p1.html">Faceless</a><br>
+              <ul class="b">
+                <li class="indent violet"><i>Synopsis: Between the masks, she's lost her real self. </i></li>
+              </ul>
+            </li>
+            <li><a href="p2.html">U + I</a><br>
+              <ul class="b">
+                <li class="indent violet"><i>Synopsis: UI is the acronym for User Interface.</i></li>
+              </ul>
+            </li>
+            <li><a href="p3.html">FILE #01090622</a><br>
+            <ul class="b">
+              <li class="indent violet"><i>Synopsis: Do you plead guilty?</i></li>
+            </ul>
+            </li>
+            <li><a href="p4.html">Prison</a><br>
+              <ul class="b">
+                <li class="indent violet"><i>Synopsis: A revelry behind prison bars.</i></li>
+              </ul>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
+  <p>This website is sponsored by the <a class="v" href="https://github.com/York-House-School/gitting-ready-for-web-programming-JoyceH24" title="YHS GitHub repository" target="_blank">YHS GitHub repository</a> and <a class="v" href="https://yorkhouse.myschoolapp.com/app/student#assignmentdetail/16144034/27431665/0/academicclass--25527233--0--assignments">MyYHS.</a></p>
+  <a href="#home" class="w3-button w3-light-night"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+
+
+<script>
+/*my own code for light and dark mode*/ 
+function darkMode(){
+  if(document.getElementById("css").getAttribute("href") == "style.css"){
+    document.getElementById("css").setAttribute("href", "dark.css"); 
+    document.getElementById("mode").innerHTML="LIGHT MODE"; 
+    //document.getElementById("title").setAttribute("class", "move-left big center w3-center w3-padding-large w3-day w3-wide w3-animate-opacity"); 
+    document.getElementById("symbol").setAttribute("class", "move-right wingding center w3-center w3-padding-large w3-day w3-xlarge w3-wide w3-animate-opacity"); 
+  }else{
+    document.getElementById("css").setAttribute("href", "style.css"); 
+    document.getElementById("mode").innerHTML="NIGHT MODE"; 
+   // document.getElementById("title").setAttribute("class", "move-left big center w3-center w3-padding-large w3-night w3-wide w3-animate-opacity"); 
+    document.getElementById("symbol").setAttribute("class", "move-right wingding center w3-center w3-padding-large w3-night w3-xlarge w3-wide w3-animate-opacity"); 
+  }
+}
+
+
+
+
+/*from template*/ 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && document.getElementById("css").getAttribute("href") == "style.css") {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-night";
+    } else if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && document.getElementById("css").getAttribute("href") == "dark.css"){
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-day";
+    } else if (document.getElementById("css").getAttribute("href") == "dark.css"){
+      navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-day", "");
+    } else {
+      navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-night", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
