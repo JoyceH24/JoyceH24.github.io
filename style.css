@@ -9,7 +9,9 @@ body {
 .black{
   background-color:black!important
 }
-
+.blood{
+  background-image: url(blood.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+}
 .flip-card {
   background-color: transparent;
   width: 200px;
