@@ -6,6 +6,10 @@ body {
     line-height: 1.8;
 }
 
+.black{
+  background-color:black!important
+}
+
 .fade-in-text{
   animation: fadeIn 7s;
 }
