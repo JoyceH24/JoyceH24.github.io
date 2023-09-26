@@ -6,6 +6,10 @@ body {
     line-height: 1.8;
 }
 
+.black{
+  background-color:black!important
+}
+
 .flip-card {
   background-color: transparent;
   width: 200px;
