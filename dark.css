@@ -10,7 +10,7 @@ body {
   background-color:black!important
 }
 .blood{
-  background-image: url(blood.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+  background-image: url(bloodD.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
 }
 
 .fade-in-text{
