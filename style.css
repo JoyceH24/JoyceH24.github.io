@@ -71,7 +71,7 @@ a.no-underline:hover {
 }
   
 .fade-out-text{
-  animation: fadeOut 5s; 
+  animation: fadeOut 10s; 
   color:black
 }
 
