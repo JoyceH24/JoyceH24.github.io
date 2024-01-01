@@ -6,6 +6,10 @@ body {
     line-height: 1.8;
 }
 
+.courier{
+  font-family: 'Lucida Console', 'Courier New', monospace!important; 
+}
+
 .black{
   background-color:black!important
 }
